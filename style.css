@@ -64,6 +64,14 @@ a span {
     margin-top: 10px;
 }
 
+small {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #ccc;
+}
+
+
 a:hover {
     color: #ccc; /* Cor do link ao passar o mouse */
 }
