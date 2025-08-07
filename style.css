@@ -23,7 +23,7 @@ main {
 }
 
 section {
-    background-color: #333; /* Fundo cinza escuro */
+    background-color: #000; /* Fundo cinza escuro */
     padding: 20px;
     border: 1px solid #444;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -79,3 +79,4 @@ a:hover {
 a:hover img {
     opacity: 0.8;
 }
+
