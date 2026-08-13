@@ -8,6 +8,8 @@
 </head>
 <body>
 
+    <button id="btn-tema" class="btn-tema">☀️ Modo Claro</button>
+
     <div class="logo">
         <img src="logo.png" alt="Logo MGM FOTOGRAFIA">
     </div>
@@ -96,7 +98,22 @@
                 </li>
 
             </ul>
-        </section>
+       </section>
     </main>
+
+<script>
+        const btnTema = document.getElementById('btn-tema');
+        const body = document.body;
+
+        btnTema.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            
+            if (body.classList.contains('light-mode')) {
+                btnTema.textContent = '🌙 Modo Escuro';
+            } else {
+                btnTema.textContent = '☀️ Modo Claro';
+            }
+        });
+    </script>
 </body>
 </html>
