@@ -2,8 +2,16 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000; /* Grafite escuro e muito suave (não é preto puro) */
-    color: #e4e4e7; /* Branco gelo, super confortável para leitura */
+    color: #e4e4e7;
+    
+    /* Configuração do fundo em grade com a logo */
+    background-color: #000000; 
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.98), rgba(0, 0, 0, 0.98)), /* Filtro escuro (96% de opacidade) */
+        url('logo.png'); /* Puxa a sua logo */
+    background-repeat: repeat; /* Faz a logo se repetir em grade */
+    background-size: 180px; /* Tamanho da logo no fundo (pode aumentar ou diminuir) */
+    background-attachment: fixed; /* Deixa o fundo parado enquanto a página rola (efeito premium) */
 }
 
 .logo {
