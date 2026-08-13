@@ -80,5 +80,26 @@ a:hover img {
     opacity: 0.8;
 }
 
+/* Estilo do Botão do WhatsApp */
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #FF1216; /* Verde oficial do WhatsApp */
+    color: #ffffff !important;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin: 15px 0 25px 0;
+    box-shadow: 0px 4px 10px rgba(225, 18, 22, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #A80C0F; /* Verde mais escuro ao passar o mouse */
+    transform: scale(1.05); /* Pequeno efeito de aumento */
+    opacity: 1; /* Previne a opacidade configurada no "a:hover" geral */
+}
+
 
 
