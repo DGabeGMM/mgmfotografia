@@ -176,3 +176,76 @@ a:hover img {
     padding-bottom: 0; /* Removemos o preenchimento que afastava os elementos */
     border-bottom: none; /* Remove a linha branca/cinza debaixo do texto */
 }
+
+
+/* =========================================
+   BOTÃO DE ALTERNAR TEMA (SOL/LUA)
+   ========================================= */
+.btn-tema {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #27272a;
+    color: #fff;
+    border: 1px solid #3f3f46;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.btn-tema:hover {
+    transform: scale(1.05);
+}
+
+/* =========================================
+   REGRAS DO MODO CLARO (LIGHT MODE)
+   ========================================= */
+body.light-mode {
+    background-color: #f4f4f5; /* Fundo cinza bem clarinho */
+    color: #18181b; /* Texto principal escuro */
+    background-image: 
+        linear-gradient(rgba(244, 244, 245, 0.94), rgba(244, 244, 245, 0.94)),
+        url('logo.png'); /* A logo no fundo ficará bem sutil, dando um visual limpo */
+}
+
+/* Inverte a cor da logo principal (O CSS transforma o branco em preto/grafite escuro) */
+body.light-mode .logo img {
+    filter: invert(1); /* Transforma o fundo preto em branco e a logo em preta */
+    mix-blend-mode: multiply; /* Faz todo o fundo branco da imagem desaparecer! */
+}
+/* Ajusta o fundo e a sombra do painel central */
+body.light-mode section {
+    background-color: #ffffff;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08); /* Sombra bem leve e clara */
+}
+
+/* Ajusta a cor dos títulos, textos e links para escuro */
+body.light-mode h2, 
+body.light-mode h3, 
+body.light-mode .texto-chamada,
+body.light-mode a {
+    color: #27272a;
+}
+
+/* Ajusta a cor do texto do telefone para cinza */
+body.light-mode .telefone-texto {
+    color: #71717a;
+}
+
+/* O texto passa a ficar verde ao passar o mouse, igual no modo escuro */
+body.light-mode a:hover {
+    color: #25D366;
+}
+
+/* Inverte as cores do botão de tema quando o modo claro está ativo */
+body.light-mode .btn-tema {
+    background-color: #ffffff;
+    color: #18181b;
+    border: 1px solid #d4d4d8;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
